@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="author" content="Bruno Vuletić">
+        <meta name="description" content="Neki opis">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Vjezba 4!!</title>
+    </head>
+    
+    <body>
+       <h1>Multimedijski sadržaji u HTML-u</h1>
+       <p>Na web stranicama uz i vrlo često nalaze se i multimedijsi wsadržaji  <br>
+        Pod pojmom multimedija uglavnom podrazumijevamo audio i video sadržaje  <br><br>
+        HTML5 omogućava jednostavnu integraciju multimedijskih sadržaja.        <br>
+    </p>
+    <h1>Audio</h1>
+    <p>Za korištenje na webu audio datoteke moraju biti priprmljenje u dogovrajućim formatima</p>
+    <ul>
+        <li>mp3</li>
+        <li>wav</li>
+        <li>ogg</li>
+    </ul>
+    <audio controls loop preload="auto">
+        <source src="pirati.mp3" type="audio/mpeg">
+        <p>Preglednik ne podržava audio sadržaj!</p>
+    </audio>
+    
+    <h1>Video</h1>
+    <p>Za korištenje na webu video datoteke moraju biti priprmljenje u dogovrajućim formatima </p>
+    <ol>
+        <li>mp4</li>
+        <li>webM</li>
+        <li>ogg</li>
+      </ol>
+      <hr>
+      <button onclick="pozovi()" type="button">Test - pusti video</button>
+      <hr>
+      <video id="medvjed" controls width = "1024" height = "700" preload ="auto">
+          <source src= "medvjed.mp4" type="video/mp4">
+        <p>Preglednik ne podržava video sadržaj!</p>
+      </video>
+   
+
+    <script>
+        function pozovi(){
+            var med_id = document.getElementById("medvjed"); 
+            med_id.play();
+        }
+        </script>
+         </body>
+</html>
