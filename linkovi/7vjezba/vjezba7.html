@@ -9,7 +9,7 @@
     <title>Vjezba obrasci</title>
     </head>
     <body>
-        <form name="obrazac_vjezba1" action="" method = "post">
+        <form name="obrazac_vjezba1" action="#" method = "post">
             <label for = "imePrez" > Ime i prezime*</label>                                     <br>
             <input id = "imePrez" type = "text" placeholder="Vaše ime i prezime" required>      <br>
             <label for ="email">E-mail adresa*</label>                                          <br>
@@ -18,35 +18,35 @@
             <input id = tel type="tel">                                                         <br>
             <label for ="datRod">Datum rođenja</label>                                          <br>
             <input id = datRod type="date">                                                     <br>
-            <label for ="lang"><strong>Koje jezike govorite?</strong></label>                   <br>
+            <div><strong>Koje jezike govorite?</strong></div>          
             <table>
                 <tr>
                 <td><label for ="eng">Engleski</label> 
-                    <input id = "eng" type = "checkbox">
+                    <input id = "eng" name="lang" type = "checkbox" value ="engleski">
                 </td>
                 <td>
                     <label for ="tal">Talijanski</label>
-                    <input id = "tal" type = "checkbox">
+                    <input id = "tal" name="lang" type = "checkbox" value ="talijanski">
                 </td>
                 <td><label for ="de">Njemački</label> 
-                    <input id = "de" type = "checkbox">
+                    <input id = "de" name="lang" type = "checkbox" value ="njemacki">
                 </td>
                 <td>
                     <label for ="fr">Francuski</label>
-                    <input id = "fr" type = "checkbox">
+                    <input id = "fr" name="lang" type = "checkbox" value ="francuski">
                 </td>
                 <td>
                     <label for ="es">Španjolski</label>
-                    <input id = "es" type = "checkbox">
+                    <input id = "es" name="lang" type = "checkbox" value ="spanjolski">
                 </td>
                 
                 </tr>
             </table>
-            <label for ="daNe"><strong>Da li sete do sada koristili usluge naše tvrtke?</strong></label><br> 
+            <div><strong>Da li sete do sada koristili usluge naše tvrtke?</strong></div>
             <label for="Da">Da</label>
-            <input id = Da type="radio" name="usluga">                               
+            <input id = Da type="radio" name="usluga" value="1">                               
             <label for="Ne">Ne</label>
-            <input id = Ne type="radio" name="usluga">                                  <br>
+            <input id = Ne type="radio" name="usluga" value="0">                                  <br>
             <label for="zivotopis">Priložite životopis</label>                          <br>
             <input id="zivotopis" type="file">                                          <br>
             <input type="reset" value="Poništi!">
