@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="author" content="Bruno Vuletić">
+        <meta name="description" content="Neki opis">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba obrasci</title>
+    </head>
+    <body>
+        <form name="obrazac_vjezba1" action="" method = "post">
+            <label for = "imePrez" > Ime i prezime*</label>                                     <br>
+            <input id = "imePrez" type = "text" placeholder="Vaše ime i prezime" required>      <br>
+            <label for ="email">E-mail adresa*</label>                                          <br>
+            <input id = email type="email" placeholder="Upišite valjanu e-mail adresu" required><br>
+            <label for ="tel">Kontakt broj telefona</label>                                     <br>
+            <input id = tel type="tel">                                                         <br>
+            <label for ="datRod">Datum rođenja</label>                                          <br>
+            <input id = datRod type="date">                                                     <br>
+            <label for ="lang"><strong>Koje jezike govorite?</strong></label>                   <br>
+            <table>
+                <tr>
+                <td><label for ="eng">Engleski</label> 
+                    <input id = "eng" type = "checkbox">
+                </td>
+                <td>
+                    <label for ="tal">Talijanski</label>
+                    <input id = "tal" type = "checkbox">
+                </td>
+                <td><label for ="de">Njemački</label> 
+                    <input id = "de" type = "checkbox">
+                </td>
+                <td>
+                    <label for ="fr">Francuski</label>
+                    <input id = "fr" type = "checkbox">
+                </td>
+                <td>
+                    <label for ="es">Španjolski</label>
+                    <input id = "es" type = "checkbox">
+                </td>
+                
+                </tr>
+            </table>
+            <label for ="daNe"><strong>Da li sete do sada koristili usluge naše tvrtke?</strong></label><br> 
+            <label for="Da">Da</label>
+            <input id = Da type="radio" name="usluga">                               
+            <label for="Ne">Ne</label>
+            <input id = Ne type="radio" name="usluga">                                  <br>
+            <label for="zivotopis">Priložite životopis</label>                          <br>
+            <input id="zivotopis" type="file">                                          <br>
+            <input type="reset" value="Poništi!">
+            <input type="submit" value="Prijavi se!">
+            
+
+        </form>
+        
+    </body>
+</html>
