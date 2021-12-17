@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+            <meta charset="UTF-8">
+            <meta name ="author" content="Bruno Vuletić">
+            <meta name="description" content="Neki opis">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pocetna">Početna</a></li>
+                    <li><a href="#zivotopis">Životopis</a></li>
+                    <li><a href="#edukacija">Edukacija</a></li>
+                    <li><a href="#personal">Personal</a></li>
+                    <li><a href="#fit">Forme i tablice</a></li>
+                </ol>
+            </nav>
+            <hr>
+            <h1>Početna stranica</h1>
+            <br>
+            <figure>
+            <img src="../slike/muski.svg" title="nemam sliku" alt="slika" width="200" height="200">
+            <figcaption><strong>Bruno Vuletić</strong></figcaption>
+            </figure>
+        </header>
+        <main>
+        <section>
+            <h2 id = "pocetna">About</h2>
+            <p>Developer with Oracle development experience, mostly banking oriented applications.<br>
+               Three years of Oracle development, also developing old WCF services and new web APIs using .NET core
+            </p>
+            <article>
+                <h3>My interests</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </article>
+            <article>
+            <h3>Misija i cilj</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <hr>
+        </section>
+        <section>
+            <h2 id ="zivotopis">Životopis</h2>
+            <h3>Uvod</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Iskustva u poslu</h3>
+            <ul>
+                <li>Razni studentski poslovi</li>
+                <li>ERSTE BANK
+                 <ul>
+                     <li>3 years experience</li>
+                     <li>Languages: 
+                         <ul>
+                             <li>Mostly PL/SQL</li>
+                             <li>.NET</li>
+                             <li>Cobol - yes, that's still a thing :)</li>
+                             <li>A little bit of front (HTML, javascript)</li>
+                         </ul>
+                     </li>
+                 </ul>       
+                </li>
+            </ul>    
+            <hr>
+        </section>
+        <section>
+            <h2 id ="edukacija">Edukacija</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <hr>
+        </section>
+        <section>
+            <h2 id ="personal">Personal</h2>
+            <h3>List of hobbies:</h3>
+            <ul>
+                <li>Gym</li>
+                <li>biciklizam</li>
+                <li>planinarenje</li>
+            </ul>
+            <hr>
+        </section>
+        <footer>
+            <h2 id ="fit">Obrazac</h2>
+            <form name="obrazac" action="#" method = "post">
+            <table border="1">
+               <tbody>
+                   <tr>
+                       <th><label for ="ime">Ime: </label></th>
+                       <td><input id = "ime" type = "text" placeholder="Vaše ime" required></td>
+                   </tr>
+                   <tr>
+                    <th><label for ="prezime">Prezime: </label></th>
+                    <td><input id = "prezime" type = "text" placeholder="Vaše prezime" required></td>
+                   </tr>
+                   <tr>
+                    <th><label for ="email">E-mail: </label></th>
+                    <td><input id = "email" type="email" placeholder="Upišite valjanu e-mail adresu" required></td>
+                   </tr>
+                   <tr>
+                    <th><label for ="poruka">Poruka: </label></th>
+                    <td><textarea id="poruka" placeholder="optional" rows="1" cols="40"></textarea></td>
+                   </tr>
+                   <tr>
+                    <th colspan="2"> <input type="submit" value="SUBMIT!"></th>
+                   </tr>
+                  
+               </tbody>
+            </table>
+        </form>
+        </footer>
+    </main>
+    </body>
+</html>
